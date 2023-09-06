@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+        window.XSL_fetchresponse = []
+        window.XSL_error = []
+
+
+        window.XSL_runInclusionMethod = async () => {
+            for (let mode of ['no-cors', 'cors', 'same-origin', 'navigate', 'websocket']) {
+                for (let cache of ['default', 'no-store', 'reload', 'no-cache', 'force-cache', 'only-if-cached']) {
+                    for (let redirect of ['follow', 'error', 'manual']) {
+                        for (let integrity of ['', 'sha256-abc']) {
+                            try {
+                                window.XSL_fetchresponse.push(await fetch('{{ url | safe }}#' + `${mode}-${cache}-${redirect}-${integrity}`, {
+                                    mode: mode,
+                                    credentials: 'include',
+                                    cache: cache,
+                                    redirect: redirect,
+                                    integrity: integrity
+                                }))
+                            } catch (error) {
+                                window.XSL_error.push(error)
+                            }
+                        }
+                    }
+                }
+            }
+            console.log('[Testcase] XSL_runInclusionMethod called')
+        }
+        
+    </script>
+</body>
+</html>

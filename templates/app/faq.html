@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Language" content="en">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css" integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css">
+    <style>
+
+        body {
+            /* fix modal padding */ 
+            padding-right: 0px !important;
+        }
+
+        .navbar > a {
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1920px;
+            width: 92%;
+        }
+        table {
+            width: 100%;
+        }
+        td.gridjs-td {
+            padding: 2px 5px;
+        }
+        
+
+        th:nth-child(6){
+            width: 25%;
+        }
+        th:nth-child(7){
+            width: 8%;
+        }
+        th:nth-child(1){
+            width: 12%;
+        }
+
+        th:nth-child(2){
+            width: 25%;
+        }
+
+        th:nth-child(5){
+            width: 5%;
+        }
+
+        .tags{
+            white-space: nowrap; 
+            overflow: scroll; /* maybe use overflow: hidden; this is so slow in chrome */
+            -ms-overflow-style: none; /* dont show scrollbar */
+            scrollbar-width: none;
+        }
+        .tags::-webkit-scrollbar {
+            display: none;
+        }
+
+        #filterbtn{
+            background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-top: none;
+            color: #6b7280;
+            outline: none;
+            position: relative;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+        #filterbtn:hover{
+            background-color: #e5e7eb;
+        }
+
+    </style>
+    <title>AutoLeak - FAQ</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <i class="fa-regular fa-droplet" width="30" height="30"></i> AutoLeak </a>
+                <small>finding XS-Leaks with DOM Graphs</small>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin">
+                                <span class="fa-solid fa-screwdriver-wrench"></span> Admin </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/faq">
+                                <span class="fas fa-question-circle"></span> FAQ </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link" href="https://github.com/..."><span class="fab fa-github"></span> Source</a> -->
+                            <a class="nav-link" href="/source.zip">
+                                <span class="fab fa-github"></span> Source </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="/paper.pdf">
+                                <span class="fas fa-file-alt"></span> Paper </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row my-5 justify-content-xl-center">
+            <div class="col-xl-6 bg-light p-3 mx-5 rounded text-justify">
+                <h3>FAQ</h3>
+                <hr>
+                <h5>What are Cross-Site Leaks (XS-Leaks) and whats their impact?</h5>
+                <p>
+                    XS-Leaks are a type of vulnerability in web applications and web browsers which allow an attacker to infer state information from another, different website.
+                    This can be used to infer personal and sensitive information, e.g., location, political opinion or sexual orientation, which can be used for targeted scamming attacks, discrimination, or market research.
+                </p>
+                <h5>What is this website?</h5>
+                <p>
+                    This website show the results of our automated XS-Leak detection tool.
+                </p>
+                <p class="mx-5"><a href="/paper.pdf" class="text-reset" target="_blank"><span class="fas fa-file-alt"></span> <strong>Finding All Cross-Site Needles in the DOM Stack: A Comprehensive Methodology for the Automatic XS-Leak Detection in Web Browsers</strong></a>
+                </p>
+                <h5>What is "the crawler"?</h5>
+                <p>
+                    A JavaScript program that runs in a web browser and exports all properties and objects it can find as a graph.
+                    It does so by starting at an object, e.g. window, or globalThis.
+                    It then enumerates all properties on that object and collects data like the readability, data type, and serialized representations.
+                    For every property, it creates an edge, and for every unique object a node.
+                    The crawler then repeats with one of the un-traversed objects until all objects have been traversed.
+                </p>
+                <h5>What is DOMparator?</h5>
+                <p>
+                    The <i>COMPARATOR</i> component in the paper is codenamed <i>DOMparator</i> - because it's a comparator for DOMs.
+                    It stores graphs in a database and can compute the difference between two (or more) graphs. 
+                    The difference algorithm takes graphs as inputs and removes everything they have in common. 
+                    What remains are the parts that differ.
+                    DOMparator also normalizes these changes by ignoring irrelevant changes (e.g., timestamps), and summarizes changes (e.g., "there are 6123 differing edges at window[0]").
+                </p>
+                <h5>What is Autograph?</h5>
+                <p>
+                    Autograph AUTOmatically creates many GRAPHs.
+                    It is a test case runner that combines browsers, inclusion methods, differences and file types in order to test whether this combination results in an XS-Leak.
+                    It invokes the crawler inside the browsers to extract graphs, and then lets DOMParator calculate the difference.
+                </p>
+                <h5>What are "inclusion methods"?</h5>
+                <p>
+                    Inclusion methods include resources via URLs. For example, a website can use an <code>&lt;img&gt;</code> tag to load an image from another website, and an <code>&lt;iframe&gt;</code> tag can be used to embed another website.
+                    We tested a set of {{ inclusionmethods|length }} inclusion methods: {{ ", ".join(inclusionmethods) }}.
+                </p>
+                <h5>What are "differences"?</h5>
+                <p>
+                    Differences in the context of the table mean what part of the HTTP response differs. For example, in the first state, the HTTP response contains a header <code>X-Frame-Options: Deny</code>, and in the other state, it doesn't. That's a difference. Click on them in the table to see more details.
+                </p>
+                <h5>What are "file types"?</h5>
+                <p>
+                    In order to test how inclusion methods react to semantical differences, we implemented a small set of file types. For example, we try to load HTML content into an <code>&lt;img&gt;</code>, or a PDF into an <code>&lt;iframe&gt;</code> and observe if the browser reacts differently.
+                </p>
+                <h5>What are "browsers"?</h5>
+                <p>
+                    You are using one right now. We tested Firefox, Chrome and Safari with the automation of <a href="https://playwright.dev/" target="_blank">Playwright</a>.
+                </p>
+                <h5>What is the number of graph differences ("#")?</h5>
+                <p>
+                    This is the number of properties that differ between the graphs of state 0 and 1.
+                    For example, if you create two identical graphs by running the crawler (extractor) twice in the same browser window, but before the second time you create a global variable <code>window.foo='bar'</code>, the number of differences will be 1.
+                </p>
+                <h5>What are tags?</h5>
+                <p>
+                    Manually reviewing many thousand changes per test case isn't feasible.
+                    Therefore, we summarize the changes per test case.
+                    For example, if the browser window size changes, all changes to visual dimensions are summarized with "element dimensions".
+                    This makes spotting the root cause of changes easier.
+                </p>
+                <h5>What can I do with the buttons?</h5>
+                <p>
+                    You can view the complete list of changes for every graph in the JSON format.
+                    You can open a test case in the "manual evaluation mode", meaning you have direct access to the SD-URL. That is useful if you want to manually evaluate a test case, e.g., using the devtools console.
+                </p>
+                <h5>Can I run new tests here?</h5>
+                <p>
+                    No, this website is a read-only view of the data set. If you wish to run new tests, you can get our code from <a href="https://github.com/xxxx">Github</a> or contact us and we may add them for you. 
+                </p>
+                <h5>How can I contact you?</h5>
+                <p>
+                    You can contact us via .... 
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
+
+<!-- 
+What are Cross-Site Leaks (XS-Leaks) and whats their impact?
+XS-Leaks are a type of vulnerability in web applications and web browser which allow an attacker to infer state information from another, different website. 
+This can be used to infer personal and sensitive information, e.g. location, political opinion or sexual orientation, wich can be used for targeted scamming attacks, discrimination, or market research.
+What is this website?
+On this website you can browse the data set of our paper Title/LINK.
+What is "the crawler"?
+A JavaScript program that runs in a web browser and exports all properties and objects it can find as a graph.
+It does so by starting at an object, e.g. window, or globalThis.
+It then enumerates all properties on that object and collects data like the readability, data type, and serialized representations.
+For every property, it creates an edge, and for every unique object a node.
+The crawler then repeats with one of the un-traversed objects until all objects have been traversed.
+What is DOMparator?
+The COMPARATOR component in the paper is codenamed DOMparator - because its a comparator for DOMs.
+It stores graphs in a database and can compute the difference of two (or more) graphs. 
+The difference algorithm takes graphs as inputs and removes everything they have in common. 
+What remains are the parts that differ.
+DOMparator also normalizes these changes by ignoring irrelevant changes (e.g. time stamps), and summarizes changes (e.g. "there are 6123 differing edges at window[0]").
+What is Autograph?
+Autograph AUTOmatically creates many GRAPHs.
+It is a test case runner that combines browsers, inclusion methods, differences and file types in order to test whether this combination results in an XS-Leak.
+It invokes the crawler inside the browsers to extract graphs, and then let's DOMParator calculate the difference.
+What are "inclusion methods"?
+Inclusion methods include resources via URLs. For example, a website can used an <img> tag to load an image from another website, and an <iframe> tag can be used to embed another website.
+We tested a list of ZAHL inclusion methods: LIST
+What are "differences"?
+Differences in the context of the table means what part of the HTTP response differs. For example, in the one state, the HTTP response contains a header "X-FRAME-OPTIONS: Deny", and in the other state, it doesn't. That's a difference.
+l
+What are "file types"?
+In order to test the reaction of inclusion methods to semantical differences, we implemented a small set of file types. For example, we try to load HTML content into an <img>, or a PDF into an <iframe>, and observe if the browser reacts differently.
+What are "browsers"?
+You are using one right now. We tested Firefox, Chrome and Safari with the automation of Playwright.
+What is the number of graph differences ("#")?
+This is the number of properties that differ between the graphs of state 0 and 1.
+For example, if you create two identical graphs by running the crawler (extractor) twice in the same browser window, but before the second time you create a global variable "window.foo='bar'", the number of differences will be 1.
+What are tags?
+Manually reviewing many thousand changes per test case isn't feasible.
+Therefore, we summarize the changes per test case.
+For example, if the browser window size changes, all changes to visual dimensions are summarized with "element dimensions".
+This makes spotting the root cause of changes easier. 
+LIST OF TAGS
+What can I do with the buttons?
+You can view the complete list of changes for every graph in the JSON format.
+You can open a test case in the "manual evaluation mode", meaning you have direct access to the SRD URL. Thats useful if you want to manually evaluate a test case, e.g. using the devtools console.
+Can I run new tests?
+No, this website is a read-only view on the data set. If you wish to run new tests, you can instantiiate our code using docker dompose as descripted in <LINK to github repo>
+-->

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+        window.XSL_runInclusionMethod = () => {
+            window.XSL_popup = window.open("{{ url | safe }}", "_blank")
+            console.log('[Testcase] XSL_runInclusionMethod called')
+        }
+    </script>
+</body>
+</html>

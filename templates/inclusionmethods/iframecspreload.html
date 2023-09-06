@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+        window.XSL_inclusionMethod = document.createElement('iframe')
+        window.XSL_inclusionMethod.setAttribute('csp', 'default-src \'self\';')
+        window.XSL_inclusionMethod.src = '{{ url | safe }}'
+        window.XSL_inclusionMethod.onload = () => {
+            // change location after onload once
+            setTimeout(() => {
+                window.XSL_inclusionMethod.onload = null
+                window.XSL_inclusionMethod.src = '{{ url | safe }}'
+            }, 500)
+
+        }
+
+        window.XSL_runInclusionMethod = () => {
+            document.body.appendChild(window.XSL_inclusionMethod)
+            console.log('[Testcase] XSL_runInclusionMethod called')
+        }
+
+    </script>
+</body>
+</html>
+
+

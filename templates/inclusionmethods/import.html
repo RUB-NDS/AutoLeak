@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+
+
+        window.XSL_runInclusionMethod = async () => {
+            try{
+                window.XSL_import = await import('{{ url | safe }}')
+            } catch (error) {
+                window.XSL_error = error
+            }
+            console.log('[Testcase] XSL_runInclusionMethod called')
+        }
+        
+    </script>
+</body>
+</html>

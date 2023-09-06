@@ -1,0 +1,279 @@
+{
+    "browsers": ["chrome", "firefox", "webkit"],
+    "differences": [
+        {
+            "name": "none",
+            "response0": {
+                "status": 200,
+                "headers": []
+            },
+            "response1": {
+                "status": 200,
+                "headers": []
+            }
+        },
+        {
+            "name": "timingalloworigin",
+            "response0": {
+                "status": 200,
+                "headers": [
+                    {
+                        "name": "Timing-Allow-Origin",
+                        "value": "*"
+                    }
+                ]
+            },
+            "response1": {
+                "status": 200,
+                "headers": []
+            }
+        },
+        {
+            "name": "xframeoptions",
+            "response0": {
+                "status": 200,
+                "headers": [
+                    {
+                        "name": "X-Frame-Options",
+                        "value": "sameorigin"
+                    }
+                ]
+            },
+            "response1": {
+                "status": 200,
+                "headers": []
+            }
+        },
+        {
+            "name":"crossoriginresourcepolicy",
+            "response0": {
+                "status": 200,
+                "headers": [
+                    {
+                        "name": "Cross-Origin-Resource-Policy",
+                        "value": "same-origin"
+                    }
+                ]
+            },
+            "response1": {
+                "status": 200,
+                "headers": []
+            }
+        },
+        {
+            "name":"csp",
+            "response0": {
+                "status": 200,
+                "headers": [
+                    {
+                        "name": "Content-Security-Policy",
+                        "value": "default-src 'self';"
+                    }
+                ]
+            },
+            "response1": {
+                "status": 200,
+                "headers": []
+            }
+        },
+        {
+            "name":"cspframeancestors",
+            "response0": {
+                "status": 200,
+                "headers": [
+                    {
+                        "name": "Content-Security-Policy",
+                        "value": "frame-ancestors 'self';"
+                    }
+                ]
+            },
+            "response1": {
+                "status": 200,
+                "headers": []
+            }
+        },
+        {
+            "name":"contentdisposition",
+            "response0": {
+                "status": 200,
+                "headers": [
+                    {
+                        "name": "Content-Disposition",
+                        "value": "attachment; filename=leak.txt"
+                    }
+                ]
+            },
+            "response1": {
+                "status": 200,
+                "headers": []
+            }
+        },
+        {
+            "name":"xcontenttypeoptions",
+            "response0": {
+                "status": 200,
+                "headers": [
+                    {
+                        "name": "X-Content-Type-Options",
+                        "value": "nosniff"
+                    }
+                ]
+            },
+            "response1": {
+                "status": 200,
+                "headers": []
+            }
+        },
+        {
+            "name":"crossoriginopenerpolicy",
+            "response0": {
+                "status": 200,
+                "headers": [
+                    {
+                        "name": "Cross-Origin-Opener-Policy",
+                        "value": "same-origin"
+                    }
+                ]
+            },
+            "response1": {
+                "status": 200,
+                "headers": []
+            }
+        },
+        {
+            "name":"acceptranges",
+            "response0": {
+                "status": 200,
+                "headers": [
+                    {
+                        "name": "Accept-Ranges",
+                        "value": "bytes"
+                    }
+                ]
+            },
+            "response1": {
+                "status": 200,
+                "headers": []
+            }
+        },
+        {
+            "name":"cspframeancestorsvsxframeoptions",
+            "response0": {
+                "status": 200,
+                "headers": [
+                    {
+                        "name": "Content-Security-Policy",
+                        "value": "frame-ancestors 'self';"
+                    }
+                ]
+            },
+            "response1": {
+                "status": 200,
+                "headers": [
+                    {
+                        "name": "X-Frame-Options",
+                        "value": "Deny"
+                    }
+                ]
+            }
+        },
+        {
+            "name":"200vs500",
+            "response0": {
+                "status": 200,
+                "headers": []
+            },
+            "response1": {
+                "status": 500,
+                "headers": []
+            }
+        }
+    ],
+    
+    "inclusionmethods": [
+        {
+            "name": "iframe",
+            "template": "iframe.html"
+        },
+        {
+            "name": "iframecsp",
+            "template": "iframecsp.html"
+        },
+        {
+            "name": "image",
+            "template": "image.html"
+        },
+        {
+            "name": "stylesheet",
+            "template": "stylesheet.html"
+        },
+        {
+            "name": "object",
+            "template": "object.html"
+        },
+        {
+            "name": "script",
+            "template": "script.html"
+        },
+        {
+            "name": "embed",
+            "template": "embed.html"
+        },
+        {
+            "name": "audio",
+            "template": "audio.html"
+        },
+        {
+            "name": "video",
+            "template": "video.html"
+        },
+        {
+            "name": "windowopen",
+            "template": "windowopen.html"
+        },
+        {
+            "name": "iframehashreload",
+            "template": "iframehashreload.html"
+        }
+
+    ],
+
+    "filetypes": [
+        {
+            "name": "html",
+            "contenttype": "text/html",
+            "filetemplate": "test.html"
+        },
+        {
+            "name": "css",
+            "contenttype": "text/css",
+            "filetemplate": "test.css"
+        },
+        {
+            "name": "text",
+            "contenttype": "text/plain",
+            "filetemplate": "test.css"
+        },
+        {
+            "name": "gif",
+            "contenttype": "image/gif",
+            "filetemplate": "test.gif"
+        },
+        {
+            "name": "wav",
+            "contenttype": "audio/wav",
+            "filetemplate": "test.wav"
+        },
+        {
+            "name": "pdf",
+            "contenttype": "application/pdf",
+            "filetemplate": "test.pdf"
+        },
+        {
+            "name": "js",
+            "contenttype": "application/javascript",
+            "filetemplate": "test.js"
+        }
+
+    ]
+}

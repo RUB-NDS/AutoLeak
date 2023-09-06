@@ -1,0 +1,4279 @@
+{
+    "browsers": ["chrome", "firefox", "webkit"],
+    "differences": [
+    
+{
+    "name": "AcceptCHdevicememorydprwidthvi0",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Accept-CH",
+                "value": "device-memory, dpr, width, viewport-width, rtt, downlink, ect, sec-ch-ua, sec-ch-ua-arch, sec-ch-ua-platform, sec-ch-ua-model, sec-ch-ua-mobile, sec-ch-ua-full-version, sec-ch-ua-platform-version, sec-ch-prefers-color-scheme, sec-ch-ua-bitness, sec-ch-viewport-height, sec-ch-device-memory, sec-ch-dpr, sec-ch-width, sec-ch-viewport-width, sec-ch-ua-full-version-list, sec-ch-ua-wow64"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AcceptCHsecchdevicememorydevic1",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Accept-CH",
+                "value": "sec-ch-device-memory,device-memory"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AcceptRangesbytes2",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Accept-Ranges",
+                "value": "bytes"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlAllowExternaltrue3",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Allow-External",
+                "value": "true"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlAllowMethods4",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Allow-Methods",
+                "value": "*"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlAllowMethodsBadva5",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Allow-Methods",
+                "value": "Bad value"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlAllowMethodsDELET6",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Allow-Methods",
+                "value": "DELETE"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlAllowMethodsGET7",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Allow-Methods",
+                "value": "GET"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlAllowMethodsNEW8",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Allow-Methods",
+                "value": "NEW"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlAllowMethodsOPTIO9",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Allow-Methods",
+                "value": "OPTIONS, GET, POST"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlAllowMethodsOPTIO10",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Allow-Methods",
+                "value": "OPTIONS, POST"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlAllowMethodsPATCH11",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Allow-Methods",
+                "value": "PATCH"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlAllowMethodsPOST12",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Allow-Methods",
+                "value": "POST"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlAllowMethodsPUT13",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Allow-Methods",
+                "value": "PUT"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlAllowMethodsYO14",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Allow-Methods",
+                "value": "YO"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlAllowMethodschick15",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Allow-Methods",
+                "value": "chicken"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlAllowMethodsdelet16",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Allow-Methods",
+                "value": "delete"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlAllowMethodsget17",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Allow-Methods",
+                "value": "get"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlAllowMethodspatcH18",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Allow-Methods",
+                "value": "patcH"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlAllowMethodspatch19",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Allow-Methods",
+                "value": "patch"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlAllowMethodsput20",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Allow-Methods",
+                "value": "put"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlExposeHeaders21",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Expose-Headers",
+                "value": "*"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlExposeHeadersAge22",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Expose-Headers",
+                "value": "Age"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlExposeHeadersServ23",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Expose-Headers",
+                "value": "Server"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlExposeHeadersSetC24",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Expose-Headers",
+                "value": "Set-Cookie"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlExposeHeadersSetC25",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Expose-Headers",
+                "value": "Set-Cookie2"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlExposeHeadersWarn26",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Expose-Headers",
+                "value": "Warning"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlExposeHeadersXReq27",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-Request-Method"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlExposeHeadersbb828",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Expose-Headers",
+                "value": "bb-8"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlExposeHeadersbb8b29",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Expose-Headers",
+                "value": "bb-8,bb-8"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlExposeHeadersbb8n30",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Expose-Headers",
+                "value": "bb-8, no"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlExposeHeadersbb8n31",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Expose-Headers",
+                "value": "bb-8, no no"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlExposeHeadersbb8132",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Expose-Headers",
+                "value": "bb-8,,@#$#%%&^&^*()()11!"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlExposeHeaderscont33",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Expose-Headers",
+                "value": "content-language"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlExposeHeaderscont34",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Expose-Headers",
+                "value": "content-language, a"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlExposeHeaderscont35",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Expose-Headers",
+                "value": "content-language, a, b"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlExposeHeadersnobb36",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Expose-Headers",
+                "value": "no, bb-8"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlExposeHeaderssetc37",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Expose-Headers",
+                "value": "set-cookie,*"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlExposeHeadersxFoo38",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Expose-Headers",
+                "value": "x-Foo"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AccessControlExposeHeadersxcha39",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Access-Control-Expose-Headers",
+                "value": "x-challenge, xhr-user, ses-user"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AllowCSPFrom40",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Allow-CSP-From",
+                "value": "*"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "Linkfailpngrelprefetch41",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Link",
+                "value": "</fail.png>;rel=prefetch"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "Linkrelprefetch42",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Link",
+                "value": "</>;rel=prefetch"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AllowCSPFromÂÂÂ43",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Allow-CSP-From",
+                "value": "* Â¢Â¥Â§"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AllowCSPFromhttpexamplecom88844",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Allow-CSP-From",
+                "value": "http://example.com:888"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AllowCSPFromhttpsexamplecom45",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Allow-CSP-From",
+                "value": "https://example.com"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AllowCSPFromÂÂÂ46",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Allow-CSP-From",
+                "value": "Â¢Â¥Â§"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "AltSvch3443ma2592000h32944347",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Alt-Svc",
+                "value": "h3=\":443\"; ma=2592000,h3-29=\":443\";"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "CacheControlmustrevalidate48",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Cache-Control",
+                "value": "must-revalidate"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "CacheControlnocache49",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Cache-Control",
+                "value": "no-cache"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "CacheControlnocachemustrevalid50",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Cache-Control",
+                "value": "no-cache, must-revalidate"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "CacheControlnocachenostore51",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "CacheControlnocachenostoremust52",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "CacheControlnostore53",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Cache-Control",
+                "value": "no-store"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "CacheControlnostorenocachemust54",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Cache-Control",
+                "value": "no-store, no-cache, must-revalidate"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "CacheControlnostorenocachemust55",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Cache-Control",
+                "value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0, false"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "CacheControlprivatenostore56",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Cache-Control",
+                "value": "private, no-store"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "CacheControlpublic57",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Cache-Control",
+                "value": "public"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "Cachecontrolnocachemustrevalid58",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Cache-control",
+                "value": "no-cache, must-revalidate"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ClearSiteDatacookies59",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Clear-Site-Data",
+                "value": "\"cookies\""
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ClearSiteDatacookiesstorage60",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Clear-Site-Data",
+                "value": "\"cookies\",\"storage\""
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ClearSiteDatastorage61",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Clear-Site-Data",
+                "value": "\"storage\""
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ConnectionUpgrade62",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Connection",
+                "value": "Upgrade"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "Connectionclose63",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Connection",
+                "value": "close"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "Connectionkeepalive64",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Connection",
+                "value": "keep-alive"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ContentDPR265",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Content-DPR",
+                "value": "-2"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ContentDPR066",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Content-DPR",
+                "value": "0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ContentDPR0567",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Content-DPR",
+                "value": "0.5"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ContentDPR2568",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Content-DPR",
+                "value": "2.5"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ContentDPR4069",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Content-DPR",
+                "value": "4.0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ContentDPR402570",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Content-DPR",
+                "value": "4.0, 2.5"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ContentDPR404071",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Content-DPR",
+                "value": "4.0, 4.0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ContentDPRxx72",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Content-DPR",
+                "value": "xx"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ContentDispositionattachment73",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Content-Disposition",
+                "value": "attachment"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ContentDispositionattachmentfi74",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Content-Disposition",
+                "value": "attachment; filename=\"json.txt\"; filename*=UTF-8''json.txt"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ContentEncodingdeflate75",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Content-Encoding",
+                "value": "deflate"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ContentEncodinggzip76",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Content-Encoding",
+                "value": "gzip"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ContentRangebytes010240000077",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Content-Range",
+                "value": "bytes 0-10/2400000"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ContentRangebytes0108791088078",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Content-Range",
+                "value": "bytes 0-10879/10880"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ContentTypeOptionsnosniff79",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Content-Type-Options",
+                "value": "nosniff"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "Count180",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Count",
+                "value": "1"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "Count281",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Count",
+                "value": "2"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "CriticalCHsecchdevicememorydev82",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Critical-CH",
+                "value": "sec-ch-device-memory,device-memory"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "CrossOriginEmbedderPolicycrede83",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Cross-Origin-Embedder-Policy",
+                "value": "credentialless"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "CrossOriginEmbedderPolicyrequi84",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Cross-Origin-Embedder-Policy",
+                "value": "require-corp"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "CrossOriginOpenerPolicysameori85",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Cross-Origin-Opener-Policy",
+                "value": "same-origin"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "DocumentPolicyReportOnlydocume86",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Document-Policy-Report-Only",
+                "value": "document-write=?0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "DocumentPolicyReportOnlyfontdi87",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Document-Policy-Report-Only",
+                "value": "font-display-late-swap=?0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "DocumentPolicyReportOnlysyncxh88",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Document-Policy-Report-Only",
+                "value": "sync-xhr=?0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "DocumentPolicydocumentdomain89",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Document-Policy",
+                "value": "document-domain"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "DocumentPolicydocumentdomain090",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Document-Policy",
+                "value": "document-domain=?0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "DocumentPolicydocumentwrite091",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Document-Policy",
+                "value": "document-write=?0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "DocumentPolicyfontdisplaylates92",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Document-Policy",
+                "value": "font-display-late-swap=?0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "DocumentPolicyfontdisplaylates93",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Document-Policy",
+                "value": "font-display-late-swap=?0, lossless-images-max-bpp=1.1"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "DocumentPolicyforceloadattop94",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Document-Policy",
+                "value": "force-load-at-top"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "DocumentPolicyforceloadattop095",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Document-Policy",
+                "value": "force-load-at-top=?0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "DocumentPolicyjsprofiling96",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Document-Policy",
+                "value": "js-profiling"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "DocumentPolicylayoutanimations97",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Document-Policy",
+                "value": "layout-animations=?0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "DocumentPolicylosslessimagesma98",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Document-Policy",
+                "value": "lossless-images-max-bpp=0.0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "DocumentPolicylosslessimagesma99",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Document-Policy",
+                "value": "lossless-images-max-bpp=1.0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "DocumentPolicylossyimagesmaxbp100",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Document-Policy",
+                "value": "lossy-images-max-bpp=0.5"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "DocumentPolicyoversizedimages2101",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Document-Policy",
+                "value": "oversized-images=2.0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "DocumentPolicysyncscript0102",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Document-Policy",
+                "value": "sync-script=?0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "DocumentPolicysyncxhr0103",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Document-Policy",
+                "value": "sync-xhr=?0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "DocumentPolicyunsizedmedia0104",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Document-Policy",
+                "value": "unsized-media=?0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "FeaturePolicyfullscreennone105",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Feature-Policy",
+                "value": "fullscreen 'none'"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "FeaturePolicyfullscreenself106",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Feature-Policy",
+                "value": "fullscreen 'self'"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "FeaturePolicypictureinpicturen107",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Feature-Policy",
+                "value": "picture-in-picture 'none'"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "FeaturePolicysyncxhrnone108",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Feature-Policy",
+                "value": "sync-xhr 'none'"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "OriginAgentCluster1109",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Origin-Agent-Cluster",
+                "value": "?1"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "PermissionsPolicyReportOnlyful110",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Permissions-Policy-Report-Only",
+                "value": "fullscreen=()"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "PermissionsPolicyReportOnlypic111",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Permissions-Policy-Report-Only",
+                "value": "picture-in-picture=()"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "PermissionsPolicyReportOnlysyn112",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Permissions-Policy-Report-Only",
+                "value": "sync-xhr=()"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "PermissionsPolicyfullscreen113",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Permissions-Policy",
+                "value": "fullscreen=()"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "PermissionsPolicyfullscreensel114",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Permissions-Policy",
+                "value": "fullscreen=self"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "PermissionsPolicypictureinpict115",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Permissions-Policy",
+                "value": "picture-in-picture=()"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "PermissionsPolicysyncxhr116",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Permissions-Policy",
+                "value": "sync-xhr=()"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "Pragmanocache117",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Pragma",
+                "value": "no-cache"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ReferrerPolicynoreferrer118",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Referrer-Policy",
+                "value": "no-referrer"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ReferrerPolicynoreferrernorefe119",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Referrer-Policy",
+                "value": "no-referrer, no-referrer,origin"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ReferrerPolicynoreferrerorigin120",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Referrer-Policy",
+                "value": "no-referrer, origin"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ReferrerPolicynoreferrerorigin121",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Referrer-Policy",
+                "value": "no-referrer, origin,not-a-valid-token"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ReferrerPolicynoreferrerwhendo122",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Referrer-Policy",
+                "value": "no-referrer-when-downgrade"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ReferrerPolicyorigin123",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Referrer-Policy",
+                "value": "origin"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ReferrerPolicyoriginoriginnore124",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Referrer-Policy",
+                "value": "origin, origin no-referrer"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ReferrerPolicyoriginwhencrosso125",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Referrer-Policy",
+                "value": "origin-when-cross-origin"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ReferrerPolicysameorigin126",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Referrer-Policy",
+                "value": "same-origin"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ReferrerPolicystrictorigin127",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Referrer-Policy",
+                "value": "strict-origin"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ReferrerPolicystrictoriginwhen128",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Referrer-Policy",
+                "value": "strict-origin-when-cross-origin"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ReferrerPolicyunsafeurl129",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Referrer-Policy",
+                "value": "unsafe-url"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "RequireDocumentPolicylosslessi130",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Require-Document-Policy",
+                "value": "lossless-images-max-bpp=1.0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "RequireDocumentPolicylosslessi131",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Require-Document-Policy",
+                "value": "lossless-images-max-bpp=1.1"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "SecWebSocketExtensionspermessa132",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Sec-WebSocket-Extensions",
+                "value": "permessage-deflate"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "SecWebSocketOriginhttpsexample133",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Sec-WebSocket-Origin",
+                "value": "https://example.com"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "SecWebSocketProtocolecho134",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Sec-WebSocket-Protocol",
+                "value": "echo"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "SecWebSocketProtocolfoobar135",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Sec-WebSocket-Protocol",
+                "value": "foobar"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ServerRequestCount1136",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Server-Request-Count",
+                "value": "1"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "ServerRequestCount3137",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Server-Request-Count",
+                "value": "3"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "SetCookie2namevalue138",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Set-Cookie2",
+                "value": "name=value"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "SetCookie2test139",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Set-Cookie2",
+                "value": "test"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "TimingAllowOrigin140",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Timing-Allow-Origin",
+                "value": "*"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "TimingAllowOriginhttpsexamplec141",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Timing-Allow-Origin",
+                "value": "https://example.com"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "TimingAllowOriginNull142",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Timing-Allow-Origin",
+                "value": "Null"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "TimingAllowOriginhttpsexamplec143",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Timing-Allow-Origin",
+                "value": "https://example.com"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "TimingAllowOriginnomatch144",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Timing-Allow-Origin",
+                "value": "no-match"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "TimingAllowOriginnull145",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Timing-Allow-Origin",
+                "value": "null"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "TransferEncodingchunked146",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "UniqueIdabsdrrgurkagmazbzawo147",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Unique-Id",
+                "value": "absdrrgurkagmazbzawo"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "UniqueIddabaenxaafqdznoscxil148",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Unique-Id",
+                "value": "dabaenxaafqdznoscxil"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "UpgradeWebSocket149",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Upgrade",
+                "value": "WebSocket"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "Vary150",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Vary",
+                "value": "*"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "VaryAcceptEncoding151",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Vary",
+                "value": "Accept-Encoding"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "VaryFoo152",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Vary",
+                "value": "Foo"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "VaryFooBar153",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Vary",
+                "value": "Foo, Bar"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "VaryFooBarBaz154",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Vary",
+                "value": "Foo, Bar, Baz"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "VaryOrigin155",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Vary",
+                "value": "Origin"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "WWWAuthenticateBasicrealmtest156",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "WWW-Authenticate",
+                "value": "Basic realm=\"test\""
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "WWWAuthenticateBasicrealmTestR157",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "WWW-Authenticate",
+                "value": "Basic realm='Test Realm/Cross Origin'"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "WarningMindthegap158",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "Warning",
+                "value": "Mind the gap"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XACRequestMethodCHICKEN159",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-A-C-Request-Method",
+                "value": "CHICKEN"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XACRequestMethodGET160",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-A-C-Request-Method",
+                "value": "GET"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XACRequestMethodHEAD161",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-A-C-Request-Method",
+                "value": "HEAD"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XACRequestMethodPOST162",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-A-C-Request-Method",
+                "value": "POST"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XACRequestMethodPUT163",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-A-C-Request-Method",
+                "value": "PUT"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XContentTypeOptionsnonosniff164",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Content-Type-Options",
+                "value": "no, nosniff"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XContentTypeOptionsnosniff165",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Content-Type-Options",
+                "value": "nosniff"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XFrameOptionsDENY166",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Frame-Options",
+                "value": "DENY"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XFrameOptionsALLOWALL167",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Frame-Options",
+                "value": "ALLOWALL"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XFrameOptionsINVALID168",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Frame-Options",
+                "value": "INVALID"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XFrameOptionsSAMEORIGIN169",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Frame-Options",
+                "value": "SAMEORIGIN"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XFrameOptionsALLOWFROMhttpsexa170",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Frame-Options",
+                "value": "ALLOW-FROM https://example.com/"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XFrameOptionsALLOWFROMhttpsexa171",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Frame-Options",
+                "value": "ALLOW-FROM=https://example.com/"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XFrameOptionsALLOWALL172",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Frame-Options",
+                "value": "ALLOWALL"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XHTTPSTATUS304173",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-HTTP-STATUS",
+                "value": "304"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XNonexposedunicorn174",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Nonexposed",
+                "value": "unicorn"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XRequestDataABC175",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Request-Data",
+                "value": "ABC"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XRequestDatahello176",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Request-Data",
+                "value": "hello"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XRequestQuery2623655333B177",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Request-Query",
+                "value": "%26%2365533%3B"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XRequestQueryDF178",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Request-Query",
+                "value": "%DF"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XRequestQueryNO179",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Request-Query",
+                "value": "NO"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XRequestQuerycontentHello180",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Request-Query",
+                "value": "content=Hello"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XRequestQuerycontentHi181",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Request-Query",
+                "value": "content=Hi"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XRequestQueryresponsecharsetla182",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Request-Query",
+                "value": "response_charset_label=UTF-8"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XRequestQuerysafelistcontentty183",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Request-Query",
+                "value": "safelist_content_type"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XSecondExposeflyingpig184",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-Second-Expose",
+                "value": "flyingpig"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XXSSProtection0185",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-XSS-Protection",
+                "value": "0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XchallengeDID186",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-challenge",
+                "value": "DID"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XchallengeDIDNOT187",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-challenge",
+                "value": "DID-NOT"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "XfooBAR188",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "X-foo",
+                "value": "BAR"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "acceptchSecCHUAArchSecCHUABitn189",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "accept-ch",
+                "value": "Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "acceptrangesbytes190",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "accept-ranges",
+                "value": "bytes"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "accesscontrolexposeheadersBB8191",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "access-control-expose-headers",
+                "value": "BB-8"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "accesscontrolexposeheadersfoo192",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "access-control-expose-headers",
+                "value": "foo"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "altsvch3443ma2592000h329443ma2193",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "alt-svc",
+                "value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "altsvch3443ma2592000h329443ma2194",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "alt-svc",
+                "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "cachecontrolnocache195",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "cache-control",
+                "value": "no cache"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "cachecontrolnocachemustrevalid196",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "cache-control",
+                "value": "no-cache, must-revalidate"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "cachecontrolnocachemustrevalid197",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "cache-control",
+                "value": "no-cache; must-revalidate"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "cachecontrolnostore198",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "cache-control",
+                "value": "no-store"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "cachecontrolprivate199",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "cache-control",
+                "value": "private"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "contentdispositionattachment200",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "content-disposition",
+                "value": "attachment"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "contentencodinggzip201",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "content-encoding",
+                "value": "gzip"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "crossoriginopenerpolicysameori202",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "cross-origin-opener-policy",
+                "value": "same-origin"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "crossoriginopenerpolicysameori203",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "cross-origin-opener-policy",
+                "value": "same-origin; report-to=\"IdentityListAccountsHttp\""
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "permissionspolicychuaarchchuab204",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "permissions-policy",
+                "value": "ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-platform=*, ch-ua-platform-version=*"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "pragmanocache205",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "pragma",
+                "value": "no-cache"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "timingalloworigin206",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "timing-allow-origin",
+                "value": "*"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "timingalloworiginhttpsexamplec207",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "timing-allow-origin",
+                "value": "https://example.com"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "timingalloworiginnull208",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "timing-allow-origin",
+                "value": "null"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "varyOriginXOriginReferer209",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "vary",
+                "value": "Origin, X-Origin, Referer"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xcontenttypeOPTIONSnosniff210",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-content-type-OPTIONS",
+                "value": "nosniff"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xcontenttypeoptionsnosniff211",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-content-type-options",
+                "value": "nosniff"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xcontrolrequestheadersaccept212",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-control-request-headers",
+                "value": "accept"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xcontrolrequestheadersacceptla213",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-control-request-headers",
+                "value": "accept-language"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xcontrolrequestheadersauthoriz214",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-control-request-headers",
+                "value": "authorization"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xcontrolrequestheaderscontentl215",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-control-request-headers",
+                "value": "content-language"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xcontrolrequestheaderscontentt216",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-control-request-headers",
+                "value": "content-type"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xcontrolrequestheaderscontentt217",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-control-request-headers",
+                "value": "content-type,x-test-header-a,x-test-header-b,x-test-header-c,x-test-header-d,x-test-header1,x-test-header2,x-test-header3"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xcontrolrequestheadersrange218",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-control-request-headers",
+                "value": "range"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xcontrolrequestheaderstest219",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-control-request-headers",
+                "value": "test"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xcontrolrequestheadersxtesthea220",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-control-request-headers",
+                "value": "x-test-header1"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xdaynum5652221",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-daynum",
+                "value": "5652"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xdaynum5653222",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-daynum",
+                "value": "5653"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xdidpreflight0223",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-did-preflight",
+                "value": "0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xdidpreflight1224",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-did-preflight",
+                "value": "1"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xframeoptionsSAMEORIGIN225",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-frame-options",
+                "value": "SAMEORIGIN"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xisfilteredvalue226",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-is-filtered",
+                "value": "value"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xoriginhttpsexamplecom227",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-origin",
+                "value": "https://example.com"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xoriginnull228",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-origin",
+                "value": "null"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xpreflightreferrerhttpsexample229",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-preflight-referrer",
+                "value": "https://example.com/"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xreferrerhttpsexamplecom230",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-referrer",
+                "value": "https://example.com/"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xrequestAcceptEncodinggzipdefl231",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-request-Accept-Encoding",
+                "value": "gzip, deflate"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xrequestAccept232",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-request-Accept",
+                "value": "*/*"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xrequestAcceptcustom233",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-request-Accept",
+                "value": "custom/*"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xrequestacceptbeforeafter234",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-request-accept",
+                "value": "before-���������-after"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xrequestcontentencodingIdentit235",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-request-content-encoding",
+                "value": "Identity"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xrequestcontentencodingNO236",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-request-content-encoding",
+                "value": "NO"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xrequestcookiea1237",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-request-cookie",
+                "value": "a=1"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xrequestcookiea2238",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-request-cookie",
+                "value": "a=2"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xrequestcookieb2c3239",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-request-cookie",
+                "value": "b=2; c=3"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xrequestoriginhttpsexamplecom240",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-request-origin",
+                "value": "https://example.com"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xrequestoriginnull241",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-request-origin",
+                "value": "null"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xrequestrefererhttpsexamplecom242",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-request-referer",
+                "value": "https://example.com/"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xxssprotection0243",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-xss-protection",
+                "value": "0"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+},
+
+{
+    "name": "xxssprotection1modeblock244",
+    "response0": {
+        "status": 200,
+        "headers": [
+            {
+                "name": "x-xss-protection",
+                "value": "1; mode=block"
+            }
+        ]
+    },
+    "response1": {
+        "status": 200,
+        "headers": []
+    }
+}
+
+
+    ],
+    
+    "inclusionmethods": [
+        {
+            "name": "iframe",
+            "template": "iframe.html"
+        },
+        {
+            "name": "iframecsp",
+            "template": "iframecsp.html"
+        },
+        {
+            "name": "image",
+            "template": "image.html"
+        },
+        {
+            "name": "stylesheet",
+            "template": "stylesheet.html"
+        },
+        {
+            "name": "object",
+            "template": "object.html"
+        },
+        {
+            "name": "script",
+            "template": "script.html"
+        },
+        {
+            "name": "embed",
+            "template": "embed.html"
+        },
+        {
+            "name": "audio",
+            "template": "audio.html"
+        },
+        {
+            "name": "video",
+            "template": "video.html"
+        },
+        {
+            "name": "windowopen",
+            "template": "windowopen.html"
+        },
+        {
+            "name": "iframehashreload",
+            "template": "iframehashreload.html"
+        },
+        {
+            "name": "formaction",
+            "template": "formaction.html"
+        },
+        {
+            "name": "formactioncsp",
+            "template": "formactioncsp.html"
+        },
+        {
+            "name": "fetch",
+            "template": "fetch.html"
+        },
+        {
+            "name": "relpreloadscript",
+            "template": "relpreloadscript.html"
+        },
+        {
+            "name": "relpreloadstyle",
+            "template": "relpreloadstyle.html"
+        }
+
+    ],
+
+    "filetypes": [
+        {
+            "name": "html",
+            "contenttype": "text/html",
+            "filetemplate": "test.html"
+        },
+        {
+            "name": "css",
+            "contenttype": "text/css",
+            "filetemplate": "test.css"
+        },
+        {
+            "name": "text",
+            "contenttype": "text/plain",
+            "filetemplate": "test.css"
+        },
+        {
+            "name": "gif",
+            "contenttype": "image/gif",
+            "filetemplate": "test.gif"
+        },
+        {
+            "name": "wav",
+            "contenttype": "audio/wav",
+            "filetemplate": "test.wav"
+        },
+        {
+            "name": "pdf",
+            "contenttype": "application/pdf",
+            "filetemplate": "test.pdf"
+        },
+        {
+            "name": "js",
+            "contenttype": "application/javascript",
+            "filetemplate": "test.js"
+        }
+
+    ]
+}

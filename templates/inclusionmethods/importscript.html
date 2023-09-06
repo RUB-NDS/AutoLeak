@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+
+        window.XSL_runInclusionMethod = () => {
+            let blob = new Blob(["importScripts('{{ url | safe }}');"])
+            window.XSL_inclusionMethod = new Worker(window.URL.createObjectURL(blob))
+            console.log('[Testcase] XSL_runInclusionMethod called')
+        }
+        
+    </script>
+</body>
+</html>

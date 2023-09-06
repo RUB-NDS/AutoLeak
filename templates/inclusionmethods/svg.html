@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+        window.XSL_inclusionMethod = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
+        let i = document.createElement('image')
+        i.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '{{ url | safe }}')
+        window.XSL_inclusionMethod.append(i)
+        
+        
+    
+        window.XSL_runInclusionMethod = () => {
+            // reload the svg ...
+            document.body.append(window.XSL_inclusionMethod)
+            window.XSL_inclusionMethod.innerHTML += ""
+            console.log('[Testcase] XSL_runInclusionMethod called')
+        }
+        
+    </script>
+</body>
+</html>

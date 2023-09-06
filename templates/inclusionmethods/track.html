@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+        window.XSL_inclusionMethod = document.createElement('video')
+        window.XSL_track = document.createElement('track')
+        window.XSL_track.setAttribute('default', 'default')
+        window.XSL_track.src = '{{ url | safe }}'
+        
+    
+        window.XSL_runInclusionMethod = () => {
+            window.XSL_inclusionMethod.append(window.XSL_track)
+            console.log('[Testcase] XSL_runInclusionMethod called')
+        }
+    </script>
+</body>
+</html>

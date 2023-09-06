@@ -1,0 +1,92 @@
+# https://docs.python.org/3/howto/regex.html
+
+# Note: 'label' get formatted with the first matching regex. 
+#  i.e. label = label.format(re.match(regex[i])) for i until match
+
+# Note: the dot (".") in regex matches "any character" without escaping. -> don't forget to escape!
+# Note: don't escape dots in lists, e.g. in [a-z.,;123]
+
+tags:
+
+
+  reloads: XSL_reloads
+  perfentries: XSL_perf
+  popup: XSL_popup
+  error: XSL_error
+  xssi: XSL_scriptfileprobe
+  fetchresponse: XSL_fetchresponse
+
+  data: 
+    regex:
+      - '\.data\.value$'
+      - '\.data\.nodeValue$'
+      - '\.data$'
+
+
+  events: XSL_events
+  namedevents:
+    label: 'on{0}'
+    regex: 'XSL_events\.([^.]+)'
+
+  history: '(:?^|\.)history(:?\.|$)'
+
+  webkitprop: '\.webkit\w+(\.|$)'
+  msprop: '\.ms\w+(\.|$)'
+  safprop: '\.saf\w+(\.|$)'
+  mozprop: '\.moz\w+(\.|$)'
+
+
+  elemsrc: '\.src(\.|$)'
+  elemonload: '\.onload$'
+  location: '(:?^|\.)location(:?\.|$)'
+  elemattributes: 'attributes\.\d\.(nodeV|v)alue'
+
+  numberedwindowhandle:
+    label: 'window[{0}]'
+    regex: '^([0-9]+)$'
+
+  windowlength: 
+    regex:
+      - '^length$'
+      - '^\d\.length$'
+
+  contentWindow: contentWindow
+  contentDocument: contentDocument
+  styleSheets: '^document\.styleSheets'
+
+  activeElement: '^document\.activeElement$'
+  readystate: '\.readyState$'
+
+  # pdfviewer in webkit is 0.0 
+  subframes: '^\d\.\d$'
+  
+
+
+
+  elemdims:
+    # you can put a list of regexes. The first matching one will be used for the label.
+    regex:
+      - \.clientHeight
+      - \.clientWidth
+      - \.offsetHeight
+      - \.offsetTop
+      - \.offsetLeft
+      - \.offsetWidth
+      - \.offsetHeight
+      - \.scrollWidth
+      - \.scrollHeight
+      - \.visualViewport.height
+      - \.visualViewport.width
+      - \.naturalHeight
+      - \.naturalWidth
+      - \.height
+      - \.width
+      - '\.y$'
+
+
+  windowdims:
+    regex: # or join the list with ORs.
+      - innerWidth|innerHeight|outerWidth|outerHeight
+
+
+nomatch: unclassified

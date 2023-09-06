@@ -1,0 +1,4 @@
+MONGO_USER = 'mongo'
+MONGO_PASS = '12345'
+MONGO_HOST = 'mongodb'
+MONGO_PORT = 27017

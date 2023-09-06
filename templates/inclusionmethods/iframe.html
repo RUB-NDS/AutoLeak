@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+        window.XSL_inclusionMethod = document.createElement('iframe')
+        window.XSL_inclusionMethod.src = '{{ url | safe }}'
+
+
+        window.XSL_runInclusionMethod = () => {
+            document.body.appendChild(window.XSL_inclusionMethod)
+            console.log('[Testcase] XSL_runInclusionMethod called')
+        }
+        
+    </script>
+</body>
+</html>

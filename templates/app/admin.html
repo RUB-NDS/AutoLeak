@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AutoGraph</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .ebtn {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        select {
+            height: 300px;
+        }
+
+        .flt_multi {
+            height: 200px !important;
+        }
+
+        table.TF{
+            caption-side: top;
+            display: none;
+        }
+
+        table.TF td {
+            text-overflow: unset !important;
+            height: 35px;
+            max-width: 550px;
+            white-space: nowrap;
+        }
+        table.path-table td {
+            max-width: 100px;
+            overflow-x: hidden;
+            white-space: nowrap;
+            text-overflow: scroll;
+        }
+        /* first td can be longer */
+        table.path-table td:first-child {
+            max-width: 400px;
+            overflow: hidden;
+
+        }
+
+
+        .tags{
+            overflow: overlay;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        .tags::-webkit-scrollbar {
+            display: none;
+        }
+
+        .icons {
+            white-space: nowrap;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+    <script src="{{ url_for('static', filename='js/tablefilter/tablefilter.js') }}"></script>
+</head>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row my-5">
+        <div class="col-xl-12">
+            <h1 class="text-center">AutoGraph</h1>
+            <hr>
+            <h4>Actions</h4>
+            <div class="my-2">
+                <form id="runform" method="POST" class="row">
+                    <div class="row">
+                        <div class="col-auto">
+                            <label for="inclusionmethods" class="form-label">Inclusionmethods</label>
+                            <select class="form-select" name="inclusionmethods" id="inclusionmethods" multiple>
+                                {% for i in inclusionmethods %}
+                                    <option value="{{ i }}">{{ i }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="col-auto">
+                            <label for="differences" class="form-label">Differences</label>
+                            <select class="form-select" name="differences" id="differences" multiple>
+                                {% for d in differences %}
+                                    <option value="{{ d }}">{{ d }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        
+                        <div class="col-auto">
+                            <label for="filetypes" class="form-label">Filetypes</label>
+                            <select class="form-select" name="filetypes" id="filetypes" multiple>
+                                {% for f in filetypes %}
+                                    <option value="{{ f }}">{{ f }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <div class="col-auto">
+                            <label for="browsers" class="form-label">Browsers</label>
+                            <select class="form-select" name="browsers" id="browsers" multiple>
+                                {% for b in browsers %}
+                                    <option value="{{ b }}">{{ b }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="col-auto my-2">
+                            <button type="submit" class="btn btn-primary" id="runnerbtn">Run Selected</button>
+                            <button type="submit" class="btn btn-danger" id="deleterbtn">Delete Selected</button>
+                            <br>
+                            <button class="btn btn btn-primary my-2" type="button" id="show_status">Show Status</button>
+                            <button class="btn btn btn-danger my-2"  type="button" id="delete_queue">Delete Queue</button>
+                            <button class="btn btn btn-danger my-2" type="button" id="purge_db">Purge Database</button>
+                            <button class="btn btn btn-danger my-2" type="button" id="resetstate">Reset all States</button>
+                            <br>
+                            <button class="btn btn btn-primary my-2" type="button" id="tag_start">(Re)make tags</button>
+                            <button class="btn btn btn-danger my-2" type="button" id="tag_clean">Clear tags</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <button class="btn btn btn-primary my-2" type="button" id="results_show_filter">Filter Selected</button>
+            <button class="btn btn btn-primary my-2" type="button" id="results_show_filter_clear">Clear Filter</button>
+            <button class="btn btn btn-primary my-2" type="button" id="results_show_findings">Show Findings</button>
+            <button class="btn btn btn-primary my-2" type="button" id="results_show_latest">Show Latest</button>
+            <br>
+            <div id="msgbox" class="alert">
+            </div>
+            <hr>
+            <h4>Results Table</h4>
+            
+            <table id="tableboy" class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Inclusionmethods</th>
+                        <th>Differences</th>
+                        <th>FileType</th>
+                        <th>Browser</th>
+                        <th>Testcase</th>
+                        <th>Actions</th>
+                        <th width="50px">#</th>
+                        <th>Details Result</th>
+                        <th>Run Took</th>
+                        <th>Last Modified</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for r in results %}
+                        {% if r.inclusionmethod is not none %}
+                        {% set name = r.inclusionmethod + '/' +  r.difference + '/' + r.filetype + '/' + r.browser%}
+                        <tr id="{{ name }}">
+                            <td><a class="showinclusion" href="/test/{{ name }}?show=1" title="Show inclusionmethod">{{ r.inclusionmethod }}</a></td>
+                            <td><a class="showdifference" href="/differences/{{ name }}?show=1" title="Show Difference">{{ r.difference }}</a></td>
+                            <td>{{ r.filetype }}</td>
+                            <td>{{ r.browser }}</td>
+                            <td>
+                                <a target="_blank" href="/test/{{ name }}" title="Open Testcase">🔗</a>
+                                <a class="switchbtn ebtn" href="/switch/{{ name }}", title="Switch State">{{"1️⃣" if r.includee_state else "0️⃣"}}</a>
+                            </td>
+                            <td class="icons">
+                                <a class="deletebtn ebtn" href="/delete/{{ name }}" title="Delete">🗑</a>
+                                <a class="runbtn ebtn" href="/run/{{ name }}" title="Run Test">⏯️</a>
+                                <a class="tagbtn ebtn" href="/tag/{{ name }}" title="Remake Tags">🏷️</a>
+                                <a class="logsbtn ebtn" href="logs/{{ name }}" title="Show Logs">📝</a>
+                                {% if r.length is not none  %}
+                                <a class="resultsbtn ebtn" href="/results/{{ name }}" title="Show Results">📈</a>
+                                <a class="detailsbtn ebtn" type="button" href="/details/{{ name }}" title="Show Result Details">🔍</a>
+                                {% endif %}
+                            </td>
+                            <td class="susnumber">
+                                {% if r.length is not none  %}
+                                <a class="pathbtn" href= "/results/{{ name }}" title="Number of differences, click to show" >
+                                        {{ r.length }}
+                                </a>
+                                {% endif %}
+                            </td>
+                            <td class="tags">
+                                {% if r.length is not none  %}
+                                {% for tag in r.diff_tags %}
+                                    {% if tag == 'unclassified' %}
+                                        <span class="badge text-bg-warning">{{tag}}</span>
+                                    {% else %}
+                                        <span class="badge text-bg-primary">{{tag}}</span>
+                                    {% endif %}
+                                {% endfor %}
+                                {% endif %}
+                            </td>
+                            <td>
+                                {{ r.duration or '' }}
+                            </td>
+                            <td>
+                                <span class="text-nowrap">{{ r.time or '' }}</span>
+                            </td>
+                        </tr>
+                        {% endif %}
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+
+    let filtersConfig = {
+        alternate_rows: true,
+        state: {
+          types: ['local_storage'],
+          filters: true,
+          sort: true,
+        },
+        paging: {
+          results_per_page: ['Records: ', [100, 250, 500, 1000]]
+        },
+        base_path: 'static/js/tablefilter/',
+        loader: true,
+        /** Bootstrap integration */
+
+        // aligns filter at cell bottom when Bootstrap is enabled
+        filters_cell_tag: 'th',
+
+        // allows Bootstrap table styling
+        themes: [{
+            name: 'transparent'
+        }],
+        col_0: 'multiple',
+        col_1: 'multiple',
+        col_2: 'multiple',
+        col_3: 'multiple',
+        col_4: 'none',
+        col_5: 'none',
+        // col_6: we want to filter this 
+        col_7: 'none',
+        col_8: 'none',
+        col_9: 'none',
+        rows_counter: true,
+        btn_reset: true,
+        // loader: true,
+        status_bar: true,
+        no_results_message: false,
+        extensions: [{ name: 'sort' }],
+        col_types: [
+            'string', 
+            'string', 
+            'string',
+            'string', 
+            'none',
+            'none',
+            'number', 
+            'none',
+            'formatted-number',
+            'date'
+        ],
+
+    };
+    let tf = new TableFilter('tableboy', filtersConfig);
+    tf.init();
+    tf.tbl.style.display = 'table'
+</script>
+
+
+
+
+
+<div class="modal" id="mainmodal" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mainmodaltitle"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="mainmodalbody">
+            </div>
+            <div class="modal-footer" id="mainmodalfooter">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='js/admin.js') }}"></script>
+
+</body>
+</html>

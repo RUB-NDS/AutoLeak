@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+        var makeEventListener = (srcObj, eventName) => {
+            return (event) => {
+                if( ! srcObj["XSL_events"] )			srcObj["XSL_events"] = {}
+                if( ! srcObj["XSL_events"][eventName] )	srcObj["XSL_events"][eventName] = []
+                // overwrite timeStamp
+                Object.defineProperty(event, 'timeStamp', {})
+                // add event so we can crawl it
+                srcObj["XSL_events"][eventName].push(event)
+                console.log(`[EventListener Module] triggered ${eventName} on ${srcObj}`)
+            }
+        }
+
+
+        window.XSL_runInclusionMethod = async () => {
+            try{
+                window.XSL_socket = new WebSocket('{{ url | safe }}'.replace(/^(https)/, 'wss'))
+                // for this test we have to add the event listeners manually :/
+                window.XSL_socket.addEventListener('open', makeEventListener(window.XSL_socket, 'open'))
+                window.XSL_socket.addEventListener('close', makeEventListener(window.XSL_socket, 'close'))
+                window.XSL_socket.addEventListener('error', makeEventListener(window.XSL_socket, 'error'))
+                window.XSL_socket.addEventListener('message', makeEventListener(window.XSL_socket, 'message'))
+                
+            } catch (error) {
+                window.XSL_error = error
+            }
+            console.log('[Testcase] XSL_runInclusionMethod called')
+        }
+        
+    </script>
+</body>
+</html>

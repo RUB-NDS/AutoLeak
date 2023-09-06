@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+        window.XSL_inclusionMethod = document.createElement('embed')
+        window.XSL_reloads = 0
+        window.XSL_inclusionMethod.src = '{{ url | safe }}'
+        window.XSL_inclusionMethod.onload = () => {
+            // one onload 
+            window.XSL_reloads += 1
+            // wait a little bit i dont want to race
+            setTimeout(() => {
+                // second onload ?
+                window.XSL_inclusionMethod.onload = () => {
+                    // stop it
+                    window.XSL_inclusionMethod.onload = null
+                    window.XSL_reloads += 1
+                }
+                // this is not a full reaload if a "normal page is loaded"
+                window.XSL_inclusionMethod.src = window.XSL_inclusionMethod.src + '#1337'
+            }, 500)
+            
+            
+        }
+        
+        window.XSL_runInclusionMethod = () => {
+            document.body.appendChild(window.XSL_inclusionMethod)
+            console.log('[Testcase] XSL_runInclusionMethod called')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+        window.XSL_inclusionMethod = document.createElement('link')
+        window.XSL_inclusionMethod.rel = 'preload'
+        window.XSL_inclusionMethod.href = '{{ url | safe }}'
+        window.XSL_inclusionMethod.as = 'style'
+
+
+        window.XSL_runInclusionMethod = () => {
+            document.body.appendChild(window.XSL_inclusionMethod)
+            console.log('[Testcase] XSL_runInclusionMethod called')
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,2034 @@
+{
+    "browsers": ["chrome", "firefox", "webkit"],
+    "differences": [
+        
+    {
+        "name": "AcceptRangesbytes0",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Accept-Ranges",
+                    "value": "bytes"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "AcceptRangesnone1",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Accept-Ranges",
+                    "value": "none"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "AllowGETPOSTHEADOPTIONPUT2",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Allow",
+                    "value": "GET, POST, HEAD, OPTION, PUT"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "AltSvcclear3",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Alt-Svc",
+                    "value": "clear"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "AltSvchttp11domparatordomainac4",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Alt-Svc",
+                    "value": "http/1.1=domparator-domain-a.com"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "AuthorizationBasicd2lraTpwZWRp5",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Basic d2lraTpwZWRpYQ=="
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "CacheControlmustrevalidate6",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Cache-Control",
+                    "value": "must-revalidate"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "CacheControlnocache7",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Cache-Control",
+                    "value": "no-cache"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "CacheControlnostore8",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Cache-Control",
+                    "value": "no-store"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "CacheControlnotransform9",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Cache-Control",
+                    "value": "no-transform"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "CacheControlpublic10",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Cache-Control",
+                    "value": "public"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "CacheControlprivate11",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Cache-Control",
+                    "value": "private"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "CacheControlproxyrevalidate12",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Cache-Control",
+                    "value": "proxy-revalidate"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "CacheControlimmutable13",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Cache-Control",
+                    "value": "immutable"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ClearSiteData14",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Clear-Site-Data",
+                    "value": "\"*\""
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ContentDispositioninline15",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Content-Disposition",
+                    "value": "inline"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ContentDispositionattachment16",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Content-Disposition",
+                    "value": "attachment"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ContentDispositionattachmentfi17",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Content-Disposition",
+                    "value": "attachment; filename=\"asdf.txt\""
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ContentEncodinggzip18",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Content-Encoding",
+                    "value": "gzip"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ContentEncodingcompress19",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Content-Encoding",
+                    "value": "compress"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ContentEncodingdeflate20",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Content-Encoding",
+                    "value": "deflate"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ContentEncodingbr21",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Content-Encoding",
+                    "value": "br"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ContentLanguagedeen22",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Content-Language",
+                    "value": "de, en"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ContentLocationdocumentsfoojso23",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Content-Location",
+                    "value": "/documents/foo.json"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ContentLocationcontentlocation24",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Content-Location",
+                    "value": "?content-location"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ContentMD5Q2h1Y2sgSW51ZwDIAXR525",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Content-MD5",
+                    "value": "Q2h1Y2sgSW51ZwDIAXR5IQ=="
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ContentRangebytes2001000133726",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Content-Range",
+                    "value": "bytes 200-1000/1337"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ContentSecurityPolicyframeance27",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Content-Security-Policy",
+                    "value": "frame-ancestors 'self';"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ContentSecurityPolicydefaultsr28",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Content-Security-Policy",
+                    "value": "default-src 'self';"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ContentTypemultipartformdatabo29",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data; boundary=-----------------"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "CrossOriginEmbedderPolicyunsaf30",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Cross-Origin-Embedder-Policy",
+                    "value": "unsafe-none"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "CrossOriginEmbedderPolicyrequi31",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Cross-Origin-Embedder-Policy",
+                    "value": "require-corp"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "CrossOriginOpenerPolicyunsafen32",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Cross-Origin-Opener-Policy",
+                    "value": "unsafe-none"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "CrossOriginOpenerPolicysameori33",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Cross-Origin-Opener-Policy",
+                    "value": "same-origin-allow-popups"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "CrossOriginOpenerPolicysameori34",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Cross-Origin-Opener-Policy",
+                    "value": "same-origin"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "CrossOriginResourcePolicysames35",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Cross-Origin-Resource-Policy",
+                    "value": "same-site"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "CrossOriginResourcePolicysameo36",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Cross-Origin-Resource-Policy",
+                    "value": "same-origin"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "CrossOriginResourcePolicycross37",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Cross-Origin-Resource-Policy",
+                    "value": "cross-origin"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "DateWed21Oct2015072800GMT38",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Date",
+                    "value": "Wed, 21 Oct 2015 07:28:00 GMT"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "Etag737060cd8c284d8af7ad3082f239",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Etag",
+                    "value": "\"737060cd8c284d8af7ad3082f209582d\""
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "Etag937060cd8c284d8af7ad3082f240",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Etag",
+                    "value": "\"937060cd8c284d8af7ad3082f209582d\""
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "Expect100continue41",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Expect",
+                    "value": "100-continue"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ExpectCTmaxage86400enforcerepo42",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Expect-CT",
+                    "value": "max-age=86400, enforce, report-uri=\"https://foo.example/report\""
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ExpiresWed21Oct2015072800GMT43",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Expires",
+                    "value": "Wed, 21 Oct 2015 07:28:00 GMT"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "FeaturePolicyaccelerometernone44",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Feature-Policy",
+                    "value": "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; battery 'none'; camera 'none'; display-capture 'none'; document-domain 'none'; encrypted-media 'none'; execution-while-not-rendered 'none'; execution-while-out-of-viewport 'none'; fullscreen 'none'; gamepad 'none'; geolocation 'none'; gyroscope 'none'; layout-animations 'none'; legacy-image-formats 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; navigation-override 'none'; oversized-images 'none'; payment 'none'; picture-in-picture 'none'; publickey-credentials-get 'none'; speaker-selection 'none'; sync-xhr 'none'; unoptimized-images 'none'; unsized-media 'none'; usb 'none'; screen-wake-lock 'none'; web-share 'none'; xr-spatial-tracking 'none';"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "FeaturePolicyaccelerometerambi45",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Feature-Policy",
+                    "value": "accelerometer *; ambient-light-sensor *; autoplay *; battery *; camera *; display-capture *; document-domain *; encrypted-media *; execution-while-not-rendered *; execution-while-out-of-viewport *; fullscreen *; gamepad *; geolocation *; gyroscope *; layout-animations *; legacy-image-formats *; magnetometer *; microphone *; midi *; navigation-override *; oversized-images *; payment *; picture-in-picture *; publickey-credentials-get *; speaker-selection *; sync-xhr *; unoptimized-images *; unsized-media *; usb *; screen-wake-lock *; web-share *; xr-spatial-tracking *;"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "Fromwebmasterexampleorg46",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "From",
+                    "value": "webmaster@example.org"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "Iftest47",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "If",
+                    "value": "test"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "IfMatch48",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "If-Match",
+                    "value": "*"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "IfMatchbfc13a64729c4290ef5b2c249",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "If-Match",
+                    "value": "\"bfc13a64729c4290ef5b2c2730249c88ca92d82d\""
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "IfModifiedSinceWed21Oct201507250",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "If-Modified-Since",
+                    "value": "Wed, 21 Oct 2015 07:28:00 GMT"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "IfModifiedSinceWed21Oct205007251",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "If-Modified-Since",
+                    "value": "Wed, 21 Oct 2050 07:28:00 GMT"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "IfNoneMatch52",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "If-None-Match",
+                    "value": "*"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "IfNoneMatchbfc13a64729c4290ef553",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "If-None-Match",
+                    "value": "\"bfc13a64729c4290ef5b2c2730249c88ca92d82d\""
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "IfRangeWed21Oct2015072800GMT54",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "If-Range",
+                    "value": "Wed, 21 Oct 2015 07:28:00 GMT"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "IfRangeWed21Oct2050072800GMT55",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "If-Range",
+                    "value": "Wed, 21 Oct 2050 07:28:00 GMT"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "IfUnmodifiedSinceWed21Oct2015056",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "If-Unmodified-Since",
+                    "value": "Wed, 21 Oct 2015 07:28:00 GMT"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "LastModifiedWed21Oct201507280057",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Last-Modified",
+                    "value": "Wed, 21 Oct 2015 07:28:00 GMT"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "Locationhttpsexamplecom58",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Location",
+                    "value": "https://example.com"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "MaxForwards159",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Max-Forwards",
+                    "value": "1"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "MaxForwards460",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Max-Forwards",
+                    "value": "4"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "NELsuccessfraction0reporttocfn61",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "NEL",
+                    "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "P3Ppolicyrefw3cp3pxmlCPCURADMO62",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "P3P",
+                    "value": "policyref=\"/w3c/p3p.xml\", CP=\"CUR ADM OUR NOR STA NID\""
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "Pragmanocache63",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Pragma",
+                    "value": "no-cache"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "Prefersafe64",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Prefer",
+                    "value": "safe"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ProxyAuthenticateBasicrealmPro65",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Proxy-Authenticate",
+                    "value": "Basic realm=\"Proxy Authenticate\""
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "PublicKeyPinsmaxage2592000pins66",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Public-Key-Pins",
+                    "value": "max-age=2592000; pin-sha256=\"E9CZ9INDbd+2eRQozYqqbQ2yXLVKB9+xcprMF+44U1g=\";"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "Refresh1urlhttpswwwexamplecom67",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Refresh",
+                    "value": "1; url=https://www.example.com/"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "Refresh0urlhttpswwwexamplecom68",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Refresh",
+                    "value": "0; url=https://www.example.com/"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ReferrerPolicynoreferrer69",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Referrer-Policy",
+                    "value": "no-referrer"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ReferrerPolicynoreferrerwhendo70",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Referrer-Policy",
+                    "value": "no-referrer-when-downgrade"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ReferrerPolicyorigin71",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Referrer-Policy",
+                    "value": "origin"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ReferrerPolicyoriginwhencrosso72",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Referrer-Policy",
+                    "value": "origin-when-cross-origin"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ReferrerPolicysameorigin73",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Referrer-Policy",
+                    "value": "same-origin"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ReferrerPolicystrictorigin74",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Referrer-Policy",
+                    "value": "strict-origin"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ReferrerPolicystrictoriginwhen75",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ReferrerPolicyunsafeurl76",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Referrer-Policy",
+                    "value": "unsafe-url"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ReportToReportTogroupcspendpoi77",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Report-To",
+                    "value": "Report-To: { \"group\": \"csp-endpoint\", \"max_age\": 10886400, \"endpoints\": [ { \"url\": \"https://domperator.com\" } ] }"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "RetryAfterWed21Oct2015072800GM78",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Retry-After",
+                    "value": "Wed, 21 Oct 2015 07:28:00 GMT"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "SecGPC179",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Sec-GPC",
+                    "value": "1"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "Serverservername80",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Server",
+                    "value": "servername"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ServerTimingcachedescCacheRead81",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Server-Timing",
+                    "value": "cache;desc=\"Cache Read\";dur=23.2"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ServiceWorkerAllowed82",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Service-Worker-Allowed",
+                    "value": "/"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "StrictTransportSecuritymaxage383",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Strict-Transport-Security",
+                    "value": "max-age=31536000"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "TitleTestingTitle84",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Title",
+                    "value": "Testing Title"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "TrailerMaxForwards85",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Trailer",
+                    "value": "Max-Forwards"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "Vary86",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Vary",
+                    "value": "*"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "ViaVia10fred11nowherecomApache87",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Via",
+                    "value": "Via: 1.0 fred, 1.1 nowhere.com (Apache/1.1)"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "WarningWarning199Miscellaneous88",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "Warning",
+                    "value": "Warning: 199 Miscellaneous warning"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "WWWAuthenticateBasic89",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "WWW-Authenticate",
+                    "value": "Basic"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "WWWAuthenticateDigest90",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "WWW-Authenticate",
+                    "value": "Digest"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "WWWAuthenticateNegotiate91",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "WWW-Authenticate",
+                    "value": "Negotiate"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "WWWAuthenticateAWS4HMACSHA25692",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "WWW-Authenticate",
+                    "value": "AWS4-HMAC-SHA256"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XContentDuration4266693",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-Content-Duration",
+                    "value": "42.666"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XDownloadOptionsnoopen94",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-Download-Options",
+                    "value": "noopen"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XFrameOptionsALLOW95",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-Frame-Options",
+                    "value": "ALLOW"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XFrameOptionsDENY96",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-Frame-Options",
+                    "value": "DENY"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XPermittedCrossDomainPoliciesm97",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-Permitted-Cross-Domain-Policies",
+                    "value": "master-only"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XPermittedCrossDomainPoliciesn98",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XUACompatibleIE599",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-UA-Compatible",
+                    "value": "IE=5"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XUACompatibleIE7100",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-UA-Compatible",
+                    "value": "IE=7"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XUACompatibleIE8101",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-UA-Compatible",
+                    "value": "IE=8"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XUACompatibleIE9102",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-UA-Compatible",
+                    "value": "IE=9"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XUACompatibleIE10103",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-UA-Compatible",
+                    "value": "IE=10"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XUACompatibleIE11104",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-UA-Compatible",
+                    "value": "IE=11"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XUACompatibleIEedge105",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-UA-Compatible",
+                    "value": "IE=edge"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XUACompatibleIEEmulateIE7106",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-UA-Compatible",
+                    "value": "IE=EmulateIE7"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XUACompatibleIEEmulateIE8107",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-UA-Compatible",
+                    "value": "IE=EmulateIE8"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XUACompatibleIEEmulateIE9108",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-UA-Compatible",
+                    "value": "IE=EmulateIE9"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XUACompatibleIEEmulateIE10109",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-UA-Compatible",
+                    "value": "IE=EmulateIE10"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XUACompatibleIEEmulateIE11110",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-UA-Compatible",
+                    "value": "IE=EmulateIE11"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XXSSProtection1modeblock111",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-XSS-Protection",
+                    "value": "1; mode=block"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    },
+
+    {
+        "name": "XXSSProtection1112",
+        "response0": {
+            "status": 200,
+            "headers": [
+                {
+                    "name": "X-XSS-Protection",
+                    "value": "1"
+                }
+            ]
+        },
+        "response1": {
+            "status": 200,
+            "headers": []
+        }
+    }
+
+    ],
+    
+    "inclusionmethods": [
+        {
+            "name": "iframe",
+            "template": "iframe.html"
+        },
+        {
+            "name": "iframecsp",
+            "template": "iframecsp.html"
+        },
+        {
+            "name": "image",
+            "template": "image.html"
+        },
+        {
+            "name": "stylesheet",
+            "template": "stylesheet.html"
+        },
+        {
+            "name": "object",
+            "template": "object.html"
+        },
+        {
+            "name": "script",
+            "template": "script.html"
+        },
+        {
+            "name": "embed",
+            "template": "embed.html"
+        },
+        {
+            "name": "audio",
+            "template": "audio.html"
+        },
+        {
+            "name": "video",
+            "template": "video.html"
+        },
+        {
+            "name": "windowopen",
+            "template": "windowopen.html"
+        },
+        {
+            "name": "iframehashreload",
+            "template": "iframehashreload.html"
+        },
+        {
+            "name": "formaction",
+            "template": "formaction.html"
+        },
+        {
+            "name": "formactioncsp",
+            "template": "formactioncsp.html"
+        },
+        {
+            "name": "fetch",
+            "template": "fetch.html"
+        },
+        {
+            "name": "relpreloadscript",
+            "template": "relpreloadscript.html"
+        },
+        {
+            "name": "relpreloadstyle",
+            "template": "relpreloadstyle.html"
+        }
+
+    ],
+
+    "filetypes": [
+        {
+            "name": "html",
+            "contenttype": "text/html",
+            "filetemplate": "test.html"
+        },
+        {
+            "name": "css",
+            "contenttype": "text/css",
+            "filetemplate": "test.css"
+        },
+        {
+            "name": "text",
+            "contenttype": "text/plain",
+            "filetemplate": "test.css"
+        },
+        {
+            "name": "gif",
+            "contenttype": "image/gif",
+            "filetemplate": "test.gif"
+        },
+        {
+            "name": "wav",
+            "contenttype": "audio/wav",
+            "filetemplate": "test.wav"
+        },
+        {
+            "name": "pdf",
+            "contenttype": "application/pdf",
+            "filetemplate": "test.pdf"
+        },
+        {
+            "name": "js",
+            "contenttype": "application/javascript",
+            "filetemplate": "test.js"
+        }
+
+    ]
+}

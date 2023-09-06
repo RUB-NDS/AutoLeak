@@ -1,0 +1,130 @@
+version: '3.7'
+
+services:
+  redis:
+    image: redis
+    restart: unless-stopped
+    expose:
+      - 6379
+    networks:
+      - autograph-network
+      
+  mongodb:
+    image: mongo:5
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongo
+      - MONGO_INITDB_ROOT_PASSWORD=12345
+    volumes:
+      - mongodbdata:/data/db
+    restart: unless-stopped
+    expose:
+      - 27017
+    ports:
+      - "127.0.0.1:27017:27017"
+    networks:
+      - autograph-network
+    # quiet
+    logging:
+      driver: "none"
+      
+  celery:
+    build: .
+    init: true # fix zombie processes
+    command: xvfb-run celery -A tasks worker -l INFO --concurrency=2
+    depends_on:
+      - mongodb
+      - redis
+    mem_limit: 6g
+    restart: unless-stopped
+    volumes:
+      - ./:/opt/autograph:ro
+    deploy:
+      mode: replicated
+      replicas: 1
+    user: 1000:1000
+    security_opt:
+      # - seccomp=playwright_seccomp.json # wait until this is fixed in docker compose
+      - seccomp=unconfined
+    networks:
+      - autograph-network
+    environment:
+      - PYTHONUNBUFFERED=1
+         
+  backend:
+    build: .
+    env_file:
+      - .env
+    command: gunicorn app:app --bind 0.0.0.0:9876 --workers=8 --log-level=info --timeout 300 --access-logfile '-' --reload
+    mem_limit: 8g
+    restart: unless-stopped
+    user: 1000:1000
+    expose:
+      - 9876
+    volumes:
+      - ./:/opt/autograph:ro
+    depends_on:
+      - celery
+    networks:
+      - autograph-network
+    environment:
+      - PYTHONUNBUFFERED=1
+
+
+  flower:
+    image: mher/flower
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - FLOWER_PORT=5555
+    ports:
+      - 0.0.0.0:5555:5555
+    restart: unless-stopped
+    depends_on:
+      - redis
+      - celery
+    networks:
+      - autograph-network
+
+
+  nginx:
+    build:
+      context: ./proxy
+      args:
+          - FRONTEND_USERNAME=${FRONTEND_USERNAME}
+          - FRONTEND_PASSWORD=${FRONTEND_PASSWORD}
+          - BASEDOMAIN=${BASEDOMAIN}
+          - CROSSORIGINDOMAIN=${CROSSORIGINDOMAIN}
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - 0.0.0.0:80:80
+      - 0.0.0.0:443:443
+    depends_on:
+      - backend
+    networks:
+      autograph-network:
+        # set aliases to the needed domains, so that the celery workers find them witouth external dns. This way, traffix stays on-host.
+        aliases:
+          - ${BASEDOMAIN}
+          - ${CROSSORIGINDOMAIN}
+
+      
+##################################################################################################################
+##### Volumes & Networks
+##################################################################################################################
+
+
+
+volumes:
+  mongodbdata:
+
+networks:
+  autograph-network:
+    driver: bridge
+    enable_ipv6: false
+    internal: false # allow outgoing internet access
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.173.202.186/16
+          gateway: 10.173.202.1
