@@ -472,7 +472,7 @@ def favicon():
 
 @app.route('/paper.pdf')
 def paper():
-    return send_from_directory('static', 'autoleak_preprint.pdf')
+    return send_from_directory('static', 'autoleak.pdf')
 
 
 # validate parameters
