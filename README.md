@@ -3,7 +3,17 @@
 > Find XS-Leaks in the browser by diffing DOM-Graphs in two states
 
 ## Paper
-- soon to be published at CCS 2023
+The contents of this repository has been published as a part of a CCS'23 paper. If you use Autoleak for academic research, we encourage you to cite the following [paper](https://doi.org/10.1145/3576915.3616598):
+
+```
+@inproceedings{autoleakCCS2023,
+  title={Finding All Cross-Site Needles in the DOM Stack: A Comprehensive Methodology for the Automatic XS-Leak Detection in Web Browsers},
+  author={No{\ss}, Dominik Trevor and Knittel, Lukas and Mainka, Christian and Niemietz, Marcus and Schwenk, J{\"o}rg},
+  booktitle={Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security},
+  pages={2456--2470},
+  year={2023}
+}
+```
 
 ## Docker Compose Setup
 1. Change environment variables in `.env` file (see below for details)

@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Finding All Cross-Site Needles in the DOM Stack: A Comprehensive Methodology for the Automatic XS-Leak Detection in Web Browsers"
+version: 2.0.4
+identifiers:
+  - type: doi
+    value: 10.1145/3576915.3616598
+date-released: 2023-11-21

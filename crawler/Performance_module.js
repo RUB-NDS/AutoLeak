@@ -26,5 +26,4 @@
         window.XSL_perf[entry.entryType] ||= []
         window.XSL_perf[entry.entryType].push(entry)
     }
-    return 
 })()

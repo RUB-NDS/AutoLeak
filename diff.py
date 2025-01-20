@@ -21,7 +21,6 @@ def convertToNetworkxGraph(g):
 
 
 def diffGraphs(g1, g2):
-
     G1 = convertToNetworkxGraph(json.loads(g1))
     G2 = convertToNetworkxGraph(json.loads(g2))
 

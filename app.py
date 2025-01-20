@@ -92,10 +92,8 @@ def api_results():
     if offset != -1 and limit != -1:
         results = results[offset:offset+limit]
     
-    # TODO i want a dict for the json response
-    # this is not the slow part
     r = json.loads(results.to_json())
-    # response
+
     return {
         'results': r,
         'total': total,

@@ -3,6 +3,7 @@ from pprint import pprint
 import re
 from testing.testsuite_tagging import testcases
 
+
 def tag(list_of_diffpaths, tagconfig, append_star=False):
 	tagrules = tagconfig['tags']
 	nomatchlabel = tagconfig['nomatch']
@@ -34,7 +35,6 @@ def load_tagrules(stream):
 	tagconfig = yaml.safe_load(stream)
 	# normalize the ease-of-life improvements, to the schema is consistent
 	tagrules = tagconfig['tags']
-	nomatchlabel = tagconfig['nomatch']
 
 	for tagrulename in tagrules:
 		if type(tagrules[tagrulename]) == dict:
