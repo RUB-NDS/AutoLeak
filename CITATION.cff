@@ -2,7 +2,14 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "Finding All Cross-Site Needles in the DOM Stack: A Comprehensive Methodology for the Automatic XS-Leak Detection in Web Browsers"
 version: 2.0.4
+authors:
+- family-names: "Knittel"
+  given-names: "Lukas"
+  orcid: "https://orcid.org/0009-0006-5676-5151"
+- family-names: "Noß"
+  given-names: "Dominik"
+  orcid: "https://orcid.org/0000-0002-2138-9989"
 identifiers:
   - type: doi
-    value: 10.1145/3576915.3616598
+    value: https://github.com/RUB-NDS/AutoLeak
 date-released: 2023-11-21
