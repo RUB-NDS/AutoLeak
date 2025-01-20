@@ -16,7 +16,7 @@ The contents of this repository has been published as a part of a CCS'23 paper. 
 ```
 
 ## Docker Compose Setup
-1. Change environment variables in `.env` file (see below for details)
+1. Change environment variables in `.env` file (see `.env-example` for details)
 2. Run the complete setup like this:
 ```
 docker compose up  -d
