@@ -1,0 +1,4 @@
+.DS_Store
+.env
+deploy_to_autoleak.sh
+deploy_to_ndscloud.sh
