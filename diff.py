@@ -4,7 +4,7 @@ import networkx
 
 
 
-BLOCKLIST = ['CRAWLER_CONFIG', 'navigator.connection.downlink', 'navigator.connection.rtt', 'clientInformation.connection.rtt', 'document.lastModified', 'document.timeline.currentTime', 'performance', 'navigation.currentEntry.id', 'navigation.currentEntry.key', 'clientInformation.connection.downlink', 'XSL_inclusionMethod.contentDocument.timeline', 'XSL_inclusionMethod.contentDocument.lastModified', 'clientInformation.connection.effectiveType'] # 'XSL_events.error.0.filename', 'outerWidth', 'outerHeight', 'screenLeft', 'screenX', 'screenY', 'screenTop'
+BLOCKLIST = ['CRAWLER_CONFIG', 'navigator.connection.downlink', 'navigator.connection.rtt', 'clientInformation.connection.rtt', 'document.lastModified', 'document.timeline.currentTime', 'performance', 'navigation.currentEntry.id', 'navigation.currentEntry.key', 'clientInformation.connection.downlink', 'XSL_inclusionMethod.contentDocument.timeline', 'XSL_inclusionMethod.contentDocument.lastModified', 'clientInformation.connection.effectiveType', 'mozInnerScreenY', 'XSL_events.error.0.filename'] #, 'outerWidth', 'outerHeight', 'screenLeft', 'screenX', 'screenY', 'screenTop'
 
 
 def convertToNetworkxGraph(g):

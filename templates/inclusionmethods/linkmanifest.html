@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+        window.XSL_inclusionMethod = document.createElement('link')
+        window.XSL_inclusionMethod.rel = 'manifest'
+        window.XSL_inclusionMethod.crossOrigin = 'use-credentials';
+        window.XSL_inclusionMethod.href = '{{ url | safe }}'
+
+
+        window.XSL_runInclusionMethod = () => {
+            document.head.appendChild(window.XSL_inclusionMethod)
+            console.log('[Testcase] XSL_runInclusionMethod called')
+        }
+        
+    </script>
+</body>
+</html>

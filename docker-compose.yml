@@ -1,11 +1,7 @@
-version: '3.7'
-
 services:
   redis:
     image: redis
     restart: unless-stopped
-    expose:
-      - 6379
     networks:
       - autograph-network
       
@@ -17,34 +13,24 @@ services:
     volumes:
       - mongodbdata:/data/db
     restart: unless-stopped
-    expose:
-      - 27017
-    ports:
-      - "127.0.0.1:27017:27017"
     networks:
       - autograph-network
-    # quiet
-    logging:
-      driver: "none"
       
   celery:
     build: .
     init: true # fix zombie processes
-    command: xvfb-run celery -A tasks worker -l INFO --concurrency=2
+    command: xvfb-run celery -A tasks worker -l INFO --concurrency=5
     depends_on:
       - mongodb
       - redis
-    mem_limit: 6g
+    mem_limit: 12g
     restart: unless-stopped
     volumes:
       - ./:/opt/autograph:ro
     deploy:
       mode: replicated
-      replicas: 1
+      replicas: 2
     user: 1000:1000
-    security_opt:
-      # - seccomp=playwright_seccomp.json # wait until this is fixed in docker compose
-      - seccomp=unconfined
     networks:
       - autograph-network
     environment:
@@ -58,11 +44,11 @@ services:
     mem_limit: 8g
     restart: unless-stopped
     user: 1000:1000
-    expose:
-      - 9876
     volumes:
       - ./:/opt/autograph:ro
     depends_on:
+      - mongodb
+      - redis
       - celery
     networks:
       - autograph-network
@@ -75,8 +61,8 @@ services:
     environment:
       - CELERY_BROKER_URL=redis://redis:6379/0
       - FLOWER_PORT=5555
-    ports:
-      - 0.0.0.0:5555:5555
+    expose:
+      - 5555
     restart: unless-stopped
     depends_on:
       - redis
@@ -126,5 +112,5 @@ networks:
     ipam:
       driver: default
       config:
-        - subnet: 10.173.202.186/16
+        - subnet: 10.173.0.0/16
           gateway: 10.173.202.1

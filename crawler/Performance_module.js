@@ -19,6 +19,10 @@
             }
         }
 
+        if(entry.entryType === 'long-animation-frame'){
+            continue
+        }
+
         window.XSL_perf[entry.entryType] ||= []
         window.XSL_perf[entry.entryType].push(entry)
     }

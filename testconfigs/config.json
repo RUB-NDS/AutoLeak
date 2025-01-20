@@ -2104,6 +2104,27 @@
             }
         },
         {
+            "name": "StatusCode200vs404XCTO",
+            "response0": {
+                "status": 200,
+                "headers": [
+                    {
+                        "name": "X-Content-Type-Options",
+                        "value": "nosniff"
+                    }
+                ]
+            },
+            "response1": {
+                "status": 404,
+                "headers": [
+                    {
+                        "name": "X-Content-Type-Options",
+                        "value": "nosniff"
+                    }
+                ]
+            }
+        },
+        {
             "name": "StatusCode200vs500",
             "response0": {
                 "status": 200,
@@ -11472,6 +11493,14 @@
         {
             "name": "prerender",
             "template": "prerender.html"
+        },
+        {
+            "name": "linkPrefetch",
+            "template": "linkprefetch.html"
+        },
+        {
+            "name": "linkManifest",
+            "template": "linkmanifest.html"
         },
         {
             "name": "frame",
