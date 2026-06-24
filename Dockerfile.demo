@@ -1,0 +1,16 @@
+FROM python:slim
+
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PIPENV_VENV_IN_PROJECT=1
+
+RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir pipenv
+
+WORKDIR /opt/autograph
+COPY Pipfile .
+
+# Install the app's Python dependencies system-wide. No `playwright install`,
+# so no browsers are downloaded.
+RUN pipenv install && pipenv install --system --deploy --ignore-pipfile
+
+VOLUME /opt/autograph
