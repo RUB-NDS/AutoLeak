@@ -95,16 +95,11 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="/admin">
-                                <span class="fa-solid fa-screwdriver-wrench"></span> Admin </a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="/faq">
                                 <span class="fas fa-question-circle"></span> FAQ </a>
                         </li>
                         <li class="nav-item">
-                            <!-- <a class="nav-link" href="https://github.com/..."><span class="fab fa-github"></span> Source</a> -->
-                            <a class="nav-link" href="/source.zip">
+                            <a class="nav-link" href="https://github.com/RUB-NDS/AutoLeak" target="_blank">
                                 <span class="fab fa-github"></span> Source </a>
                         </li>
                         <li class="nav-item">
@@ -188,11 +183,11 @@
                 </p>
                 <h5>Can I run new tests here?</h5>
                 <p>
-                    No, this website is a read-only view of the data set. If you wish to run new tests, you can get our code from <a href="https://github.com/xxxx">Github</a> or contact us and we may add them for you. 
+                    No, this website is a read-only view of the data set. If you wish to run new tests, you can get our code from <a href="https://github.com/RUB-NDS/AutoLeak">Github</a> or contact us and we may add them for you.
                 </p>
                 <h5>How can I contact you?</h5>
                 <p>
-                    You can contact us via .... 
+                    You can contact us via twitter or mail.
                 </p>
 
 
@@ -204,51 +199,3 @@
 
 
 </html>
-
-<!-- 
-What are Cross-Site Leaks (XS-Leaks) and whats their impact?
-XS-Leaks are a type of vulnerability in web applications and web browser which allow an attacker to infer state information from another, different website. 
-This can be used to infer personal and sensitive information, e.g. location, political opinion or sexual orientation, wich can be used for targeted scamming attacks, discrimination, or market research.
-What is this website?
-On this website you can browse the data set of our paper Title/LINK.
-What is "the crawler"?
-A JavaScript program that runs in a web browser and exports all properties and objects it can find as a graph.
-It does so by starting at an object, e.g. window, or globalThis.
-It then enumerates all properties on that object and collects data like the readability, data type, and serialized representations.
-For every property, it creates an edge, and for every unique object a node.
-The crawler then repeats with one of the un-traversed objects until all objects have been traversed.
-What is DOMparator?
-The COMPARATOR component in the paper is codenamed DOMparator - because its a comparator for DOMs.
-It stores graphs in a database and can compute the difference of two (or more) graphs. 
-The difference algorithm takes graphs as inputs and removes everything they have in common. 
-What remains are the parts that differ.
-DOMparator also normalizes these changes by ignoring irrelevant changes (e.g. time stamps), and summarizes changes (e.g. "there are 6123 differing edges at window[0]").
-What is Autograph?
-Autograph AUTOmatically creates many GRAPHs.
-It is a test case runner that combines browsers, inclusion methods, differences and file types in order to test whether this combination results in an XS-Leak.
-It invokes the crawler inside the browsers to extract graphs, and then let's DOMParator calculate the difference.
-What are "inclusion methods"?
-Inclusion methods include resources via URLs. For example, a website can used an <img> tag to load an image from another website, and an <iframe> tag can be used to embed another website.
-We tested a list of ZAHL inclusion methods: LIST
-What are "differences"?
-Differences in the context of the table means what part of the HTTP response differs. For example, in the one state, the HTTP response contains a header "X-FRAME-OPTIONS: Deny", and in the other state, it doesn't. That's a difference.
-l
-What are "file types"?
-In order to test the reaction of inclusion methods to semantical differences, we implemented a small set of file types. For example, we try to load HTML content into an <img>, or a PDF into an <iframe>, and observe if the browser reacts differently.
-What are "browsers"?
-You are using one right now. We tested Firefox, Chrome and Safari with the automation of Playwright.
-What is the number of graph differences ("#")?
-This is the number of properties that differ between the graphs of state 0 and 1.
-For example, if you create two identical graphs by running the crawler (extractor) twice in the same browser window, but before the second time you create a global variable "window.foo='bar'", the number of differences will be 1.
-What are tags?
-Manually reviewing many thousand changes per test case isn't feasible.
-Therefore, we summarize the changes per test case.
-For example, if the browser window size changes, all changes to visual dimensions are summarized with "element dimensions".
-This makes spotting the root cause of changes easier. 
-LIST OF TAGS
-What can I do with the buttons?
-You can view the complete list of changes for every graph in the JSON format.
-You can open a test case in the "manual evaluation mode", meaning you have direct access to the SRD URL. Thats useful if you want to manually evaluate a test case, e.g. using the devtools console.
-Can I run new tests?
-No, this website is a read-only view on the data set. If you wish to run new tests, you can instantiiate our code using docker dompose as descripted in <LINK to github repo>
--->
